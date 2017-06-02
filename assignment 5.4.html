@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+     <head>
+           <title>ASSIGNMENT 5.4</title>
+            <script type="text/javascript">
+ alert("Employee Record");
+              
+              function employee(userName, skill, salary) {
+  this.name = userName;
+  this.skills = skill;
+  this.salary = salary;
+}
+function printEmployee()
+{
+console.log("USERNAME","      SKILLS","     SALARY");
+console.log(firstEmployee.name,"         ",firstEmployee.skills,"            ",firstEmployee.salary);           
+console.log(secondEmployee.name,"        ",secondEmployee.skills,"           ",secondEmployee.salary);           
+console.log(thirdEmployee.name,"         ",thirdEmployee.skills,"            ",thirdEmployee.salary);  
+
+}
+function changeSalary()
+{ 
+    var z= firstEmployee.salary + 5000;
+    firstEmployee.salary=z;
+    printEmployee();
+}
+              
+var firstEmployee = new employee("Raja","java", 5000);
+var secondEmployee = new employee("Rani","Html", 7000); 
+var thirdEmployee = new employee("Raman","jquery", 10000);
+ 
+printEmployee();
+console.log("first employee salary changed");
+changeSalary();             
+              
+             </script>
+       </head>
+<body>
+</body>
+</html>
